@@ -66,18 +66,22 @@
     </div>
 
     <!-- JavaScript -->
+    
+    <script src="./scripts/jquery.min.js"></script>
+    <script src="./scripts/jquery.mask.min.js"></script>
     <script src="./scripts/main.js"></script>
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
 
     <script>
+        $('#consumo').mask('0.00');
+
         if ("serviceWorker" in navigator) {
-          navigator.serviceWorker.register("./service-worker.js")
-            .then(() => console.log("Service Worker registrado com sucesso."))
-            .catch(error => console.log("Falha ao registrar o Service Worker:", error));
+            navigator.serviceWorker.register("./service-worker.js")
+                .then(() => console.log("Service Worker registrado com sucesso."))
+                .catch(error => console.log("Falha ao registrar o Service Worker:", error));
         }
     </script>
-
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="./scripts/bootstrap.bundle.min.js"></script>
+    
 </body>
 
 </html>

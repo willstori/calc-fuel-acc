@@ -6,6 +6,8 @@ const urlsToCache = [
   "./styles/bootstrap.min.css", // Substitua pelo nome do seu arquivo CSS
   "./styles/styles.css", // Substitua pelo nome do seu arquivo CSS
   "./scripts/main.js",  // Substitua pelo nome do seu arquivo JS
+  "./scripts/jquery.min.js",  // Substitua pelo nome do seu arquivo JS
+  "./scripts/jquery.mask.min.js",  // Substitua pelo nome do seu arquivo JS
   "./scripts/bootstrap.bundle.min.js",  // Substitua pelo nome do seu arquivo JS
   "./img/icon-192x192.png",
   "./img/icon-512x512.png",
