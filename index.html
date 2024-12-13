@@ -22,7 +22,7 @@
             <div class="mb-1">
                 <label for="duracao" class="form-label">Duração</label>      
                 <div class="input-group">
-                    <input type="number" inputmode="numeric" class="form-control" id="duracao" min="0" placeholder="Ex: 20">
+                    <input type="number" inputmode="numeric" pattern="\d*" class="form-control" id="duracao" min="0" placeholder="Ex: 20">
                     <span class="input-group-text">min</span>
                 </div>                  
             </div>
@@ -31,13 +31,13 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="input-group">
-                            <input type="number" inputmode="numeric" class="form-control" id="voltaMin" placeholder="Ex: 1" min="0" max="59">
+                            <input type="number" inputmode="numeric" pattern="\d*" class="form-control" id="voltaMin" placeholder="Ex: 1" min="0" max="59">
                             <span class="input-group-text">min</span>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="input-group">
-                            <input type="number" inputmode="numeric" class="form-control" id="voltaSeg" placeholder="Ex: 50" min="0" max="59">
+                            <input type="number" inputmode="numeric" pattern="\d*" class="form-control" id="voltaSeg" placeholder="Ex: 50" min="0" max="59">
                             <span class="input-group-text">seg</span>
                         </div>  
                     </div>                                                  
@@ -47,14 +47,14 @@
             <div class="mb-1">
                 <label for="consumo" class="form-label">Consumo</label>
                 <div class="input-group">
-                    <input type="number" inputmode="numeric" class="form-control" id="consumo" min="0" step="0.1" placeholder="Ex: 4.1">
+                    <input type="number" inputmode="numeric" pattern="\d*" class="form-control" id="consumo" min="0" step="0.1" placeholder="Ex: 4.1">
                     <span class="input-group-text">L / Volta</span>
                 </div>                        
             </div>
             <div class="mb-1">
                 <label for="tolerancia" class="form-label">Tolerância</label>
                 <div class="input-group">
-                    <input type="number" inputmode="numeric" class="form-control" id="tolerancia" min="0" step="1" placeholder="Ex: 6">
+                    <input type="number" inputmode="numeric" pattern="\d*" class="form-control" id="tolerancia" min="0" step="1" placeholder="Ex: 6">
                     <span class="input-group-text">%</span>
                 </div>                        
             </div>
