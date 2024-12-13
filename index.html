@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Assetto Corsa Competizione, ACC, canculadora de combustível, calc, calc combustível">
+    <meta name="description" content="Calculadora para calcular o combustível necessário para uma corrida no Assetto Corsa Competizione.">
+    <link rel="manifest" href="manifest.json">
+    <meta name="author" content="Willian Stori">
+    <link rel='icon' href='./img/icon-192x192.png' type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="./styles/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Calculadora de combustível - ACC</title>    
+</head>
+
+<body>    
+    <div class="container">
+        <h1 class="text-center text-light my-3">Calculadora de Combustível - ACC</h1>
+        <form action="" class="row text-light">
+            <div class="mb-1">
+                <label for="duracao" class="form-label">Duração</label>      
+                <div class="input-group">
+                    <input type="number" class="form-control" id="duracao" min="0" placeholder="Ex: 20">
+                    <span class="input-group-text">min</span>
+                </div>                  
+            </div>
+            <div class="mb-1">
+                <label for="volta" class="form-label">Tempo da volta</label>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="voltaMin" placeholder="Ex: 1" min="0" max="59">
+                            <span class="input-group-text">min</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="voltaSeg" placeholder="Ex: 50" min="0" max="59">
+                            <span class="input-group-text">seg</span>
+                        </div>  
+                    </div>                                                  
+                </div>
+
+            </div>
+            <div class="mb-1">
+                <label for="consumo" class="form-label">Consumo</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="consumo" min="0" step="0.1" placeholder="Ex: 4.1">
+                    <span class="input-group-text">L / Volta</span>
+                </div>                        
+            </div>
+            <div class="mb-1">
+                <label for="tolerancia" class="form-label">Tolerância</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="tolerancia" min="0" step="1" placeholder="Ex: 6">
+                    <span class="input-group-text">%</span>
+                </div>                        
+            </div>
+            <div class="mb-1">
+                <label for="combustivel" class="form-label">Combustível necessário (L)</label>
+                <input type="text" class="form-control" id="combustivel" disabled>
+            </div>
+        </form>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./scripts/main.js"></script>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker.register("./service-worker.js")
+            .then(() => console.log("Service Worker registrado com sucesso."))
+            .catch(error => console.log("Falha ao registrar o Service Worker:", error));
+        }
+    </script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

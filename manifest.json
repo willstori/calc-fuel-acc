@@ -1,0 +1,21 @@
+{
+    "name": "Calculadora de Combustível - ACC",
+    "short_name": "ACC Calc",
+    "description": "Calculadora para calcular o combustível necessário para uma corrida no Assetto Corsa Competizione.",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#282830",
+    "theme_color": "#ff0022",
+    "icons": [
+      {
+        "src": "icon-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "icon-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }

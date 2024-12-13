@@ -1,0 +1,21 @@
+*.log
+*.tmp
+*.cache
+*.swp
+*.DS_Store
+
+# Ignorar pastas de dependências (caso use npm ou yarn)
+node_modules/
+dist/
+
+# Ignorar configurações específicas do sistema operacional ou editor
+.vscode/
+.idea/
+Thumbs.db
+
+# Ignorar arquivos de build ou pacotes (se aplicável)
+build/
+*.zip
+
+# Ignorar arquivos sensíveis (se aplicável)
+.env
